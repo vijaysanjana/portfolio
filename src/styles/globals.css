@@ -52,3 +52,9 @@ a:hover::before {
 .resume-link {
   color: black;
 }
+.text-peach:hover {
+  color: #fe948d;
+}
+.dark .hover\:text-peach:hover {
+  color: #fe948d;
+}
