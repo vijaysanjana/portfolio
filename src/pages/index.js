@@ -6,6 +6,7 @@ import laptop from "public/laptop.png";
 import memoji from "public/memoji2.png";
 import about from "public/about.png";
 import { useState } from "react";
+import sanju from "public/sanju.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -39,7 +40,9 @@ export default function Home() {
           </nav>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col justify-center">
-              <h1 className="text-2xl pt-20 dark:text-white">hi, i'm</h1>
+              <h1 className="text-2xl pt-20 dark:text-white text-align: right">
+                hi, i'm
+              </h1>
               <h2 className="typed text-6xl pb-2 text-lilac-dark font-medium">
                 sanjana anand
               </h2>
@@ -49,7 +52,7 @@ export default function Home() {
               <h3 className="text-3xl italic dark:text-white">
                 software engineer
               </h3>
-              <ul className="flex items-center space-x-5 py-10 text:#151515">
+              <ul className="flex items-center space-x-5 py-10 text:#151515 dark:text-white">
                 <li>
                   <a href="https://github.com/vijaysanjana">
                     <AiFillGithub className="text-3xl cursor-pointer" />
@@ -66,14 +69,23 @@ export default function Home() {
               <Image src={laptop} alt="laptop" />
             </div>
           </div>
-
           <div className="bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="py-12 md:py-20">
                 <div className="max-w-5xl mx-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="flex flex-col justify-center drop-shadow-2xl">
-                      <Image src={about} alt="about" />
+                    <div className="flex flex-col items-center justify-center drop-shadow-2xl pt-5 ">
+                      <Image
+                        style={{
+                          objectFit: "cover",
+                          width: "380px",
+                          height: "380px",
+                          overflow: "hidden",
+                          borderRadius: "50%",
+                        }}
+                        src={sanju}
+                        alt="about"
+                      />
                     </div>
                     <div className="flex flex-col justify-center pt-10 ">
                       <h3 className="text-3xl font-medium text-water-dark">
@@ -110,12 +122,20 @@ export default function Home() {
                         security, machine learning, and the intersection between
                         technology, business, and design.
                       </p>
+                      <p className="text-lg pt-5 dark:text-white">
+                        while i go to school in indiana and am based here during
+                        the academic year, i was raised in central new jersey am
+                        based there in the summers. i'm open to work in either
+                        of these locations as well as remote!
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          /* experience dropdown menu */
+          //https://codepen.io/frontendcharm/details/dyKXELw
         </section>
       </main>
     </div>
