@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-8 mb-12 flex justify-between">
+          <nav className="pt-8 pb-2 mb-12 flex justify-between">
             <h1 className="text-2xl font-satoshi dark:text-white">SA</h1>
             <ul className="flex items-center space-x-5">
               <li>
@@ -37,8 +37,8 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="flex justify-center">
-            <div className="w-1/2 pl-10 px-20 text-left items-center justify-center p-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col justify-center">
               <h1 className="text-2xl pt-20 dark:text-white">hi, i'm</h1>
               <h2 className="typed text-6xl pb-2 text-lilac-dark font-medium">
                 sanjana anand
@@ -49,11 +49,24 @@ export default function Home() {
               <h3 className="text-3xl italic dark:text-white">
                 software engineer
               </h3>
+              <ul className="flex items-center space-x-5 py-10 text:#151515">
+                <li>
+                  <a href="https://github.com/vijaysanjana">
+                    <AiFillGithub className="text-3xl cursor-pointer" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vijaysanjana/">
+                    <AiFillLinkedin className="text-3xl cursor-pointer" />
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div className="mx-auto w-1/2 items-center drop-shadow-2xl">
+            <div className="flex flex-col justify-center items-center drop-shadow-2xl">
               <Image src={laptop} alt="laptop" />
             </div>
           </div>
+
           <div className="bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="py-12 md:py-20">
