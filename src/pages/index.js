@@ -4,6 +4,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import laptop from "public/laptop.png";
 import memoji from "public/memoji2.png";
+import about from "public/about.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -22,17 +23,16 @@ export default function Home() {
             <ul className="flex items-center space-x-5">
               <li>
                 <a
-                  href="#"
-                  class="inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
+                  href="https://drive.google.com/file/d/1hVdTmVTmw5LC-Vcpnn9b5O385_NWv7j8/view?usp=share_link"
+                  class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
-                  <span class="absolute bottom-0 left-0 bg-peach-dark h-1 w-0 transition-all duration-300 ease-in-out"></span>
                 </a>
               </li>
               <li>
                 <WiDayLightWind
                   onClick={() => setDarkMode(!darkMode)}
-                  className={`cursor-pointer text-2xl text-black dark:text-white transition-colors duration-300 hover:text-peach`}
+                  className={`cursor-pointer text-2xl text-black dark:text-white transition-colors duration-300`}
                 />
               </li>
             </ul>
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-1/2 pl-10 px-20 text-left items-center justify-center p-10">
               <h1 className="text-2xl pt-20 dark:text-white">hi, i'm</h1>
-              <h2 className="text-6xl pb-2 text-lilac-dark font-medium">
+              <h2 className="typed text-6xl pb-2 text-lilac-dark font-medium">
                 sanjana anand
               </h2>
               <h3 className="text-3xl pt-3 italic dark:text-white">
@@ -60,21 +60,42 @@ export default function Home() {
                 <div className="max-w-5xl mx-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col justify-center drop-shadow-2xl">
-                      \\some image here
+                      <Image src={about} alt="about" />
                     </div>
                     <div className="flex flex-col justify-center pt-10 ">
                       <h3 className="text-3xl font-medium text-water-dark">
                         who am i?
                       </h3>
                       <p className="text-lg pt-3 dark:text-white">
-                        🎓 computer science student at purdue university
-                      </p>
-                      <p className="text-lg pt-3 dark:text-white">
-                        👩‍💼 project manager at scope consulting
-                      </p>
-                      <p className="text-lg pt-3 dark:text-white">
-                        💡 interested in machine learning, security, and web
-                        development
+                        i am a student at{"  "}
+                        <a className="highlight" href="https://www.purdue.edu/">
+                          purdue university
+                        </a>
+                        . i'll be graduating in 2025 with a b.s. in{" "}
+                        <a
+                          className="highlight"
+                          href="https://www.cs.purdue.edu/"
+                        >
+                          computer science
+                        </a>{" "}
+                        (software engineering track) and a minor in{" "}
+                        <a
+                          className="highlight"
+                          href="https://www.business.purdue.edu/"
+                        >
+                          management
+                        </a>
+                        . outside of my coursework, i've been working as a
+                        project manager at{"  "}
+                        <a
+                          className="highlight"
+                          href="https://www.scopeje-consulting.com/"
+                        >
+                          scope consulting
+                        </a>
+                        , a student-run consulting firm. my interests lie in
+                        security, machine learning, and the intersection between
+                        technology, business, and design.
                       </p>
                     </div>
                   </div>

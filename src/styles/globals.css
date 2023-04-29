@@ -7,14 +7,15 @@ body {
   display: grid;
   padding: 0;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 a {
   color: inherit;
   text-decoration: none;
   position: relative;
 }
-a::before {
+.peach-und::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -27,7 +28,7 @@ a::before {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover::before {
+:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -36,9 +37,6 @@ a:hover::before {
 .WiDayLightWind:hover {
   transform: rotate(90deg);
   transition: transform 0.3s ease-in-out;
-}
-.text-peach:hover {
-  color: #fe948d;
 }
 
 * {
@@ -49,6 +47,7 @@ a:hover::before {
   font-family: "satoshi";
   src: url("/fonts/satoshi.ttf");
 }
+
 .resume-link {
   color: black;
 }
@@ -57,4 +56,48 @@ a:hover::before {
 }
 .dark .hover\:text-peach:hover {
   color: #fe948d;
+}
+
+.highlight {
+  color: #fe948d;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #fe948d;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.highlight:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #feb8b2;
+  text-decoration: none;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1.5px solid;
+  width: 0;
+
+  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #9b6bcc;
+  }
+  100% {
+    border-color: transparent;
+  }
 }
