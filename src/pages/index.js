@@ -134,8 +134,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          /* experience dropdown menu */
-          //https://codepen.io/frontendcharm/details/dyKXELw
         </section>
       </main>
     </div>
