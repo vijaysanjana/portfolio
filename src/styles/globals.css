@@ -42,7 +42,9 @@ a {
 * {
   box-sizing: border-box;
 }
-
+h1 {
+  font-size: 5vw; /* font size will be 5% of viewport width */
+}
 @font-face {
   font-family: "satoshi";
   src: url("/fonts/satoshi.ttf");
@@ -76,7 +78,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   border-right: 1.5px solid;
-  width: 0;
+  width: 10%;
 
   animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
 }
@@ -100,4 +102,26 @@ a {
   100% {
     border-color: transparent;
   }
+}
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+.text {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
