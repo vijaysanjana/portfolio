@@ -89,7 +89,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col justify-center pt-10 ">
                       <h3 className="text-3xl font-medium text-water-dark">
-                        who am i?
+                        about me!
                       </h3>
                       <p className="text-lg pt-3 dark:text-white">
                         i am a student at{"  "}
@@ -110,23 +110,19 @@ export default function Home() {
                         >
                           management
                         </a>
-                        . outside of my coursework, i've been working as a
-                        project manager at{"  "}
+                        . my interests lie in security, ml/ai, and the
+                        intersection between tech and business. outside of my
+                        coursework, i've been working as a project manager at
+                        {"  "}
                         <a
                           className="highlight"
                           href="https://www.scopeje-consulting.com/"
                         >
                           scope consulting
                         </a>
-                        , a student-run consulting firm. my interests lie in
-                        security, machine learning, and the intersection between
-                        technology, business, and design.
-                      </p>
-                      <p className="text-lg pt-5 dark:text-white">
-                        while i go to school in indiana and am based here during
-                        the academic year, i was raised in central new jersey am
-                        based there in the summers. i'm open to work in either
-                        of these locations as well as remote!
+                        , a student-run consulting firm on campus. i'm based
+                        both in indiana and the nyc area, and am always open to
+                        work in either of these locations + remote!
                       </p>
                     </div>
                   </div>
