@@ -111,8 +111,16 @@ export default function Home() {
                           management
                         </a>
                         . my interests lie in security, ml/ai, and the
-                        intersection between tech and business. outside of my
-                        coursework, i've been working as a project manager at
+                        intersection between tech and business. this summer, i'm
+                        joining{" "}
+                        <a
+                          className="highlight"
+                          href="https://pluralsight.com/"
+                        >
+                          pluralsight
+                        </a>{" "}
+                        as an intern. i've also been working as a project
+                        manager at
                         {"  "}
                         <a
                           className="highlight"
@@ -120,9 +128,10 @@ export default function Home() {
                         >
                           scope consulting
                         </a>
-                        , a student-run consulting firm on campus. i'm based
-                        both in indiana and the nyc area, and am always open to
-                        work in either of these locations + remote!
+                        , a student-run consulting firm on campus. although i am
+                        primarily based in nj/ny, i am open to work in all
+                        locations in the summer as well as remote work during
+                        the academic year!
                       </p>
                     </div>
                   </div>
