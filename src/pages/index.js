@@ -24,7 +24,7 @@ export default function Home() {
             <ul className="flex items-center space-x-5">
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1hVdTmVTmw5LC-Vcpnn9b5O385_NWv7j8/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1Wc0qjXwNOLfndWHlvzlj_AOOCs7l8fWX/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
