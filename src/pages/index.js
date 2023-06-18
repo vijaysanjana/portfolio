@@ -5,10 +5,28 @@ import Image from "next/image";
 import laptop from "public/laptop.png";
 import memoji from "public/memoji2.png";
 import about from "public/about.png";
-import { useState } from "react";
-import sanju from "public/sanju.jpg";
+import { useState, useEffect, useRef } from "react";
+import sanju from "public/sanju.png";
+import Typed from "typed.js";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const cursorRef = useRef(null);
+  useEffect(() => {
+    if (cursorRef.current) {
+      const typed = new Typed(cursorRef.current, {
+        strings: ["sanjana anand"],
+        typeSpeed: 60,
+        // Other options and callbacks can be added here
+      });
+
+      // Clean up the Typed.js instance when component unmounts
+      return () => {
+        typed.destroy();
+      };
+    }
+  }, []);
+
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -23,8 +41,21 @@ export default function Home() {
             <h1 className="text-2xl font-satoshi dark:text-white">SA</h1>
             <ul className="flex items-center space-x-5">
               <li>
+                <a class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out">
+                  home
+                </a>
+              </li>
+              <li>
                 <a
-                  href="https://drive.google.com/file/d/1Wc0qjXwNOLfndWHlvzlj_AOOCs7l8fWX/view?usp=sharing"
+                  href="/about"
+                  class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
+                >
+                  about
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1CMsqAMIZF5ynjCL43SfFhI_SWJVAMGS-/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
@@ -43,9 +74,15 @@ export default function Home() {
               <h1 className="text-2xl pt-20 dark:text-white text-align: right">
                 hi, i'm
               </h1>
-              <h2 className="typed text-6xl pb-2 text-lilac-dark font-medium">
-                sanjana anand
-              </h2>
+              <div className="relative">
+                <span
+                  ref={cursorRef}
+                  className="text-6xl pb-2 text-lilac-dark font-medium cursor"
+                ></span>
+                <div className="absolute inset-0">
+                  {/* Content goes here */}
+                </div>
+              </div>
               <h3 className="text-3xl pt-3 italic dark:text-white">
                 cs @ purdue
               </h3>
@@ -67,76 +104,6 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-center items-center drop-shadow-2xl">
               <Image src={laptop} alt="laptop" />
-            </div>
-          </div>
-          <div className="bg-white dark:bg-gray-900">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="py-12 md:py-20">
-                <div className="max-w-5xl mx-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="flex flex-col items-center justify-center drop-shadow-2xl pt-5 ">
-                      <Image
-                        style={{
-                          objectFit: "cover",
-                          width: "380px",
-                          height: "380px",
-                          overflow: "hidden",
-                          borderRadius: "50%",
-                        }}
-                        src={sanju}
-                        alt="about"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center pt-10 ">
-                      <h3 className="text-3xl font-medium text-water-dark">
-                        about me!
-                      </h3>
-                      <p className="text-lg pt-3 dark:text-white">
-                        i am a student at{"  "}
-                        <a className="highlight" href="https://www.purdue.edu/">
-                          purdue university
-                        </a>
-                        . i'll be graduating in 2025 with a b.s. in{" "}
-                        <a
-                          className="highlight"
-                          href="https://www.cs.purdue.edu/"
-                        >
-                          computer science
-                        </a>{" "}
-                        (software engineering track) and a minor in{" "}
-                        <a
-                          className="highlight"
-                          href="https://www.business.purdue.edu/"
-                        >
-                          management
-                        </a>
-                        . my interests lie in security, ml/ai, and the
-                        intersection between tech and business. this summer, i'm
-                        joining{" "}
-                        <a
-                          className="highlight"
-                          href="https://pluralsight.com/"
-                        >
-                          pluralsight
-                        </a>{" "}
-                        as an intern. i've also been working as a project
-                        manager at
-                        {"  "}
-                        <a
-                          className="highlight"
-                          href="https://www.scopeje-consulting.com/"
-                        >
-                          scope consulting
-                        </a>
-                        , a student-run consulting firm on campus. although i am
-                        primarily based in nj/ny, i am open to work in all
-                        locations in the summer as well as remote work during
-                        the academic year!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
