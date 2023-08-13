@@ -3,12 +3,8 @@ import { WiDayLightWind } from "react-icons/wi";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import laptop from "public/laptop.png";
-import memoji from "public/memoji2.png";
-import about from "public/about.png";
 import { useState, useEffect, useRef } from "react";
-import sanju from "public/sanju.png";
 import Typed from "typed.js";
-import { useRouter } from "next/router";
 
 export default function Home() {
   const cursorRef = useRef(null);
@@ -17,10 +13,7 @@ export default function Home() {
       const typed = new Typed(cursorRef.current, {
         strings: ["sanjana anand"],
         typeSpeed: 60,
-        // Other options and callbacks can be added here
       });
-
-      // Clean up the Typed.js instance when component unmounts
       return () => {
         typed.destroy();
       };
