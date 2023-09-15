@@ -48,7 +48,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1CMsqAMIZF5ynjCL43SfFhI_SWJVAMGS-/view?usp=sharing"
+                  href="https://www.overleaf.com/read/mzfwjntppnmk"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé

@@ -49,7 +49,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1CMsqAMIZF5ynjCL43SfFhI_SWJVAMGS-/view?usp=sharing"
+                  href="https://www.overleaf.com/read/mzfwjntppnmk"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
@@ -129,7 +129,14 @@ export default function Home() {
                         >
                           scope
                         </a>
-                        , a student-run consulting firm.{" "}
+                        , a student-run consulting firm. I am also part of{" "}
+                        <a
+                          className="highlight"
+                          href="https://www.instagram.com/purduetaal/"
+                        >
+                          purdue taal
+                        </a>
+                        , a south asian a cappella group!{" "}
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
                         i am currently seeking software-oriented internship
