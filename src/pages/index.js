@@ -21,6 +21,7 @@ export default function Home() {
   }, []);
 
   const [darkMode, setDarkMode] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -48,7 +49,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://www.overleaf.com/read/mzfwjntppnmk"
+                  href="https://drive.google.com/file/d/1TPJe_jnGhd-8xjyHUFS88TXLsgfcvjYE/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
@@ -96,7 +97,14 @@ export default function Home() {
               </ul>
             </div>
             <div className="flex flex-col justify-center items-center drop-shadow-2xl">
-              <Image src={laptop} alt="laptop" />
+              <div className={`fadeIn ${imageLoaded ? "loaded" : ""}`}>
+                <Image
+                  src={laptop}
+                  alt="laptop"
+                  layout="fixed"
+                  onLoadingComplete={() => setImageLoaded(true)}
+                />
+              </div>
             </div>
           </div>
         </section>

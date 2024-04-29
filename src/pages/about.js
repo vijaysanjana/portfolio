@@ -22,6 +22,7 @@ export default function Home() {
   }, []);
 
   const [darkMode, setDarkMode] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -49,7 +50,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://www.overleaf.com/read/mzfwjntppnmk"
+                  href="https://drive.google.com/file/d/1TPJe_jnGhd-8xjyHUFS88TXLsgfcvjYE/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
@@ -69,17 +70,20 @@ export default function Home() {
                 <div className="max-w-5xl mx-auto">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col items-center justify-center drop-shadow-2xl">
-                      <Image
-                        style={{
-                          borderRadius: "50%",
-                          height: "80%",
-                          width: "80%",
-                          layout: "responsive",
-                          objectFit: "cover",
-                        }}
-                        src={sanju}
-                        alt="about"
-                      />
+                      <div
+                        className={`fadeIn ${
+                          imageLoaded ? "loaded" : ""
+                        } rounded-full overflow-hidden`}
+                      >
+                        <Image
+                          src={sanju}
+                          alt="about"
+                          width="40%" // specify the width
+                          height="40%" // specify the height to match the width
+                          onLoadingComplete={() => setImageLoaded(true)}
+                          className="object-cover"
+                        />
+                      </div>
                     </div>
                     <div className="flex flex-col justify-center pt-10 ">
                       <h3 className="text-3xl font-medium text-water-dark">
@@ -90,38 +94,41 @@ export default function Home() {
                         <a className="highlight" href="https://www.purdue.edu/">
                           purdue university
                         </a>
-                        . i'll be graduating in 2025 with a b.s. in{" "}
+                        . i'll be graduating in 2026 with a b.s. in{" "}
                         <a
                           className="highlight"
                           href="https://www.cs.purdue.edu/"
                         >
                           computer science
                         </a>{" "}
-                        (software engineering track) and a minor in{" "}
+                        (security track) and minors in{" "}
                         <a
                           className="highlight"
                           href="https://www.business.purdue.edu/"
                         >
-                          management
+                          general & hr management
                         </a>
                         . my interests lie in security, ml/ai, and the
                         intersection between tech and business.
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        this summer, i had the opportunity to join{" "}
+                        this summer, i'll be interning at{" "}
                         <a
                           className="highlight"
-                          href="https://pluralsight.com/"
+                          href="https://www.societegenerale.com/en"
                         >
-                          pluralsight
+                          societe generale
                         </a>{" "}
-                        in their software apprenticeship program. i'm also
-                        planning to join{" "}
-                        <a className="highlight" href="https://www.rtx.com/">
-                          raytheon technologies
+                        as a software developer. recently, i had the opportunity
+                        to join{" "}
+                        <a
+                          className="highlight"
+                          href="https://www.palantir.com/"
+                        >
+                          palantir technologies
                         </a>{" "}
-                        as a fellow in their leadership academy this fall. on
-                        campus, i am a project manager at
+                        as a fellow in their spring launch program. on campus, i
+                        am a project manager at
                         {"  "}
                         <a
                           className="highlight"
@@ -140,10 +147,10 @@ export default function Home() {
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
                         i am currently seeking software-oriented internship
-                        opportunities for summer 2024 - primarily in the nyc,
-                        chicago, and seattle areas, but i am open to anything!
-                        feel free to contact me if you think i could be a fit
-                        for a role you are filling!
+                        opportunities for fall 2024 or spring/summer 2025 -
+                        primarily in the nyc, chicago, and seattle areas, but i
+                        am open to anything! feel free to contact me if you
+                        think i could be a fit for a role you are filling!
                       </p>
                     </div>
                   </div>
