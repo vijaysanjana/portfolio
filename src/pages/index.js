@@ -49,7 +49,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1wggbutOGVn7GEWAEuteXYYIrTjW25-jq/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1QEdSSXV2NgM_48Zn0beNcMvNKKB3UwA1/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
