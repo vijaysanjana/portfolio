@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react"; // Import useRef from the react module
-import sanju from "public/sanju.jpg";
+import sanju from "public/sanju.jpeg";
 import { WiDayLightWind } from "react-icons/wi";
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1QEdSSXV2NgM_48Zn0beNcMvNKKB3UwA1/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1MeWwJLqUlbcajovZhSeIDppTbS1GesJc/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
@@ -90,11 +90,11 @@ export default function Home() {
                         about me!
                       </h3>
                       <p className="text-lg pt-3 dark:text-white">
-                        i am a student at{"  "}
+                        i am a rising junior at{"  "}
                         <a className="highlight" href="https://www.purdue.edu/">
                           purdue university
                         </a>
-                        . i'll be graduating in 2026 with a b.s. in{" "}
+                        , pursuing a b.s. in{" "}
                         <a
                           className="highlight"
                           href="https://www.cs.purdue.edu/"
@@ -115,19 +115,18 @@ export default function Home() {
                         >
                           music theory
                         </a>
-                        . my interests lie in security, ml/ai, and the
-                        intersection between tech and business.
+                        . my interests lie in security and fintech.
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        this summer, i'll be interning at{" "}
+                        this summer, i'll be a software engineer intern at{" "}
                         <a
                           className="highlight"
                           href="https://www.societegenerale.com/en"
                         >
                           societe generale
                         </a>{" "}
-                        as a software developer. recently, i had the opportunity
-                        to join{" "}
+                        , where i'll be working on trading tools. recently, i
+                        had the opportunity to join{" "}
                         <a
                           className="highlight"
                           href="https://www.palantir.com/"
@@ -143,7 +142,7 @@ export default function Home() {
                         >
                           scope
                         </a>
-                        , a student-run consulting firm. I am also part of{" "}
+                        , a student-run consulting firm. i am also part of{" "}
                         <a
                           className="highlight"
                           href="https://www.instagram.com/purduetaal/"
@@ -153,11 +152,11 @@ export default function Home() {
                         , a south asian a cappella group!{" "}
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        i am currently seeking software-oriented internship
-                        opportunities for fall 2024 or spring/summer 2025 -
-                        primarily in the nyc, chicago, and seattle areas, but i
-                        am open to anything! feel free to contact me if you
-                        think i could be a fit for a role you are filling!
+                        i am currently seeking swe internships for fall 2024 or
+                        spring/summer 2025 - primarily in the nyc, chicago, and
+                        seattle areas, but i am open to anything! feel free to
+                        contact me if you think i could be a fit for a role you
+                        are filling!
                       </p>
                     </div>
                   </div>
