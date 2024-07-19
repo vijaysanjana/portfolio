@@ -4,23 +4,7 @@ import { useRef, useEffect, useState } from "react"; // Import useRef from the r
 import sanju from "public/sanju.jpeg";
 import { WiDayLightWind } from "react-icons/wi";
 
-export default function Home() {
-  const cursorRef = useRef(null);
-  useEffect(() => {
-    if (cursorRef.current) {
-      const typed = new Typed(cursorRef.current, {
-        strings: ["sanjana anand"],
-        typeSpeed: 60,
-        // Other options and callbacks can be added here
-      });
-
-      // Clean up the Typed.js instance when component unmounts
-      return () => {
-        typed.destroy();
-      };
-    }
-  }, []);
-
+export default function About() {
   const [darkMode, setDarkMode] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
@@ -50,7 +34,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1MeWwJLqUlbcajovZhSeIDppTbS1GesJc/view?usp=sharing"
+                  href="https://drive.google.com/file/d/16AYy4XAWS_y71sdQ8KDhhAdY5XYSQj41/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
