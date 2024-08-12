@@ -102,15 +102,16 @@ export default function About() {
                         . my interests lie in security and fintech.
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        this summer, i'll be a software engineer intern at{" "}
+                        this summer, i was a software engineer intern at{" "}
                         <a
                           className="highlight"
                           href="https://www.societegenerale.com/en"
                         >
                           societe generale
                         </a>{" "}
-                        , where i'll be working on trading tools. recently, i
-                        had the opportunity to join{" "}
+                        , where i worked on developing tools for equity
+                        derivatives trading. recently, i also had the
+                        opportunity to join{" "}
                         <a
                           className="highlight"
                           href="https://www.palantir.com/"
