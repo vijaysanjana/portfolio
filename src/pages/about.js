@@ -34,7 +34,7 @@ export default function About() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1jPzb3JcY_pe-GDrYGmw6395F1KgDZvQD/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1gQT-3RNqRy32mb2QmsFGngYC4V2Bn3of/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
