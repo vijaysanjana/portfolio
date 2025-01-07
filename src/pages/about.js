@@ -34,7 +34,7 @@ export default function About() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1mdgXmc1qp5o2yaw5L3kW9PwUXdLmF6cX/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1o08oOaKF-4fXX64bpRwWIZMBE1knu6Y7/view?usp=sharing"
                   class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
                 >
                   resumé
@@ -102,24 +102,23 @@ export default function About() {
                         . my interests lie in security and fintech.
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        this summer, i was a software engineer intern at{" "}
+                        this upcoming summer, i am joining {" "}
                         <a
                           className="highlight"
-                          href="https://www.societegenerale.com/en"
+                          href="https://www.datadoghq.com/"
                         >
-                          societe generale
+                          datadog
                         </a>{" "}
-                        , where i worked on developing tools for equity
-                        derivatives trading. recently, i also had the
-                        opportunity to join{" "}
+                        as a software engineer intern, and i'm excited to get started and contribute to such a great product! in the past, i've also worked at{" "}
                         <a
-                          className="highlight"
-                          href="https://www.palantir.com/"
+                        className="highlight"
+                        href="https://www.societegenerale.com/en"
                         >
-                          palantir technologies
+                          societe generale,
                         </a>{" "}
-                        as a fellow in their spring launch program. on campus, i
-                        am a project manager at
+                         where i developed tools for equity
+                        derivatives trading. on campus, i
+                        am the director of project development at
                         {"  "}
                         <a
                           className="highlight"
@@ -137,11 +136,7 @@ export default function About() {
                         , a south asian a cappella group!{" "}
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        i am currently seeking swe internships for fall 2024 or
-                        spring/summer 2025 - primarily in the nyc, chicago, and
-                        seattle areas, but i am open to anything! feel free to
-                        contact me if you think i could be a fit for a role you
-                        are filling!
+                        i would love to connect with any company or individual interested in having me on board as a software engineer - i'm always on the hunt for my next big adventure!
                       </p>
                     </div>
                   </div>
