@@ -21,6 +21,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      # ✅ Workaround for GitHub Actions bug with upload-artifact@v3
+      - name: Preload upload-artifact@v3 to avoid GitHub bug
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy-artifact
+          path: ./README.md
+        continue-on-error: true
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
