@@ -5,6 +5,8 @@ import Image from "next/image";
 import anisanju from "public/anisanju.png";
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
+import Header from "@/components/Header";
+
 
 export default function Home() {
   const cursorRef = useRef(null);
@@ -31,38 +33,7 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="pt-8 pb-2 mb-12 flex justify-between">
-            <h1 className="text-2xl font-satoshi dark:text-white">SA</h1>
-            <ul className="flex items-center space-x-5">
-              <li>
-                <a class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out">
-                  home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
-                >
-                  about
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/file/d/1o08oOaKF-4fXX64bpRwWIZMBE1knu6Y7/view?usp=sharing"
-                  class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
-                >
-                  resumé
-                </a>
-              </li>
-              <li>
-                <WiDayLightWind
-                  onClick={() => setDarkMode(!darkMode)}
-                  className={`cursor-pointer text-2xl text-black dark:text-white transition-colors duration-300`}
-                />
-              </li>
-            </ul>
-          </nav>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col justify-center">
               <h1 className="text-2xl pt-20 dark:text-white text-align: right">

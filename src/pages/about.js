@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react"; // Import useRef from the react module
 import sanju from "public/sanju.jpeg";
 import { WiDayLightWind } from "react-icons/wi";
+import Header from "@/components/Header";
 
 export default function About() {
   const [darkMode, setDarkMode] = useState(false);
@@ -16,38 +17,7 @@ export default function About() {
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="pt-5 pb-2 mb-12 flex justify-between">
-            <h1 className="text-2xl font-satoshi dark:text-white">SA</h1>
-            <ul className="flex items-center space-x-5">
-              <li>
-                <a
-                  href="/"
-                  class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
-                >
-                  home
-                </a>
-              </li>
-              <li>
-                <a class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out">
-                  about
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/file/d/1o08oOaKF-4fXX64bpRwWIZMBE1knu6Y7/view?usp=sharing"
-                  class="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
-                >
-                  resumé
-                </a>
-              </li>
-              <li>
-                <WiDayLightWind
-                  onClick={() => setDarkMode(!darkMode)}
-                  className={`cursor-pointer text-2xl text-black dark:text-white transition-colors duration-300`}
-                />
-              </li>
-            </ul>
-          </nav>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <div className="bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="md:py-20">
