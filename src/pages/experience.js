@@ -45,14 +45,14 @@ const courseDescriptions = {
               <div className="md:py-8">
                 <div className="max-w-5xl mx-auto">
                   <h1 className="text-3xl sm:text-4xl font-bold text-water-dark dark:text-white mb-8">
-                    Experience
+                    experience
                   </h1>
 
                   {/* Internships */}
                   <div className="space-y-6 mb-16">
                     <div className="border-l-4 pl-4 border-peach-dark mb-4">
                       <h2 className="text-2xl font-semibold text-black dark:text-white">
-                        Internships
+                        professional experience
                       </h2>
                     </div>
 
@@ -65,21 +65,58 @@ const courseDescriptions = {
                           Summer 2025 | Cloud SIEM Team
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
-                          <li>Built internal tools to detect and investigate cloud attack patterns.</li>
-                          <li>Worked with Python, React, and Terraform in production environments.</li>
+                          <li>Working on Datadog’s Cloud SIEM platform, which ingests and analyzes logs at scale to detect security threats in
+                          real time across cloud environments.</li>
                         </ul>
                       </div>
-
                       <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
                         <h3 className="text-lg font-semibold text-black dark:text-white">
-                          Société Générale – Summer Analyst
+                          Scope Consulting – Director of Project Development
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                          Summer 2024 | Equity Derivatives Trading
+                          Feb. 2023 - Present | Executive Board
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
-                          <li>Created real-time monitoring dashboards for risk indicators.</li>
-                          <li>Automated internal processes to improve trader efficiency.</li>
+                          <li>Overseeing 50+ club members in 8 different projects within Technology and Management Consulting.</li>
+                          <li>Driving project delivery by coordinating technical roadmaps and facilitating communication between PMs and Executive
+                          Board.</li>
+                        </ul>
+                      </div>
+                      <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
+                          Société Générale – Software Engineer intern
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          Summer 2024 | Equity Derivatives Trading Team
+                        </p>
+                        <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
+                          <li>Worked on the bank’s internal PnL calculation tool and automated internal processes to improve trader efficency.</li>
+                          <li>Created functionality for PnL tool to fully operate based on data from Azure Data Lake as opposed to local data.</li>
+                        </ul>
+                      </div>
+                      <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
+                          Palantir Technologies – Spring Launch Participant
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          Spring 2024
+                        </p>
+                        <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
+                          <li>1 of 17 accepted into company’s selective NYC Launch Cohort to work with Palantir Foundry and the Artificial
+                          Intelligence Platform, as well as shadow Palantir Engineers</li>
+                          <li>Constructed a Pandemic Response dashboard, and utilized LLMs via Palantir AIP.</li>
+                        </ul>
+                      </div>
+                      <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
+                          New Jersey Office of Homeland Security – Cybersecurity Intern
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          Summer 2021
+                        </p>
+                        <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
+                          <li>Strengthened public school cybersecurity measures to aid in 40% increase in technology usage due to Covid.</li>
+                          <li>Conducted research on security threats posed by 3 popular IoT devices and drafted a mitigation strategy.</li>
                         </ul>
                       </div>
                     </div>
@@ -89,7 +126,7 @@ const courseDescriptions = {
                   <div className="space-y-8">
                     <div className="border-l-4 pl-4 border-peach-dark mb-4">
                       <h2 className="text-2xl font-semibold text-black dark:text-white">
-                        Coursework
+                        coursework
                       </h2>
                     </div>
 
