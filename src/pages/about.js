@@ -6,10 +6,9 @@ import { WiDayLightWind } from "react-icons/wi";
 import Header from "@/components/Header";
 
 export default function About() {
-  const [darkMode, setDarkMode] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>sanjana anand</title>
         <meta name="description" content="" />
@@ -17,7 +16,7 @@ export default function About() {
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900">
         <section className="min-h-screen">
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Header/>
           <div className="bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="md:py-20">

@@ -1,8 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import "@/styles/globals.css";
+import { DarkModeProvider } from "@/context/DarkModeContext";
+
 
 function MyApp({ Component, pageProps, router }) {
   return (
+    <DarkModeProvider>
     <AnimatePresence mode="wait">
       <motion.div
         key={router.route}
@@ -25,6 +28,7 @@ function MyApp({ Component, pageProps, router }) {
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
+    </DarkModeProvider>
   );
 }
 

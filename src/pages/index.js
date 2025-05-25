@@ -22,10 +22,9 @@ export default function Home() {
     }
   }, []);
 
-  const [darkMode, setDarkMode] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>sanjana anand</title>
         <meta name="description" content="" />
@@ -33,7 +32,7 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900">
         <section className="min-h-screen">
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Header/>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col justify-center">
               <h1 className="text-2xl pt-20 dark:text-white text-align: right">

@@ -1,6 +1,9 @@
 import { WiDayLightWind } from "react-icons/wi";
+import { useDarkMode } from "@/context/DarkModeContext";
 
-export default function Header({ darkMode, setDarkMode }) {
+export default function Header() {
+  const { darkMode, setDarkMode } = useDarkMode();
+
   return (
     <nav className="pt-5 pb-2 mb-12 flex justify-between">
       <h1 className="text-2xl font-satoshi dark:text-white">SA</h1>
@@ -36,12 +39,6 @@ export default function Header({ darkMode, setDarkMode }) {
           >
             resumé
           </a>
-        </li>
-        <li>
-          <WiDayLightWind
-            onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer text-2xl text-black dark:text-white transition-colors duration-300"
-          />
         </li>
       </ul>
     </nav>

@@ -1,69 +1,77 @@
 import Head from "next/head";
 import { useState } from "react";
-import Header from "@/components/Header"; // this works now that Header.js is in src/components
+import Header from "@/components/Header";
 
 export default function Experience() {
   const [selectedCourse, setSelectedCourse] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
 
-  const courseDescriptions = {
-    CS252: "Systems Programming: malloc, custom shell, HTTP server, concurrency.",
-    CS355: "Cryptography: encryption, RSA, zero-knowledge proofs, PRGs.",
-    MGMT200: "Intro to Accounting: financial statements, ratios, budgeting.",
-    ECON251: "Microeconomics: market structures, supply/demand, game theory.",
-    HONR199: "Leadership Seminar: public speaking, teamwork, ethical decision-making.",
-    MUS132: "Music Theory II: harmony, counterpoint, and 7th chord analysis.",
-  };
+const courseDescriptions = {
+  CS180: "<u>Object-Oriented Programming</u>: Introduced problem-solving and algorithmic thinking using a high-level language. Covered conditionals, iteration, object-oriented design, data structures, searching/sorting, file I/O, GUI development, and debugging techniques.",
+  CS182: "<u>Foundations of Computer Science</u>: Covered logic and proofs, set theory, functions, recursion, graph theory, finite state machines, and computability. Focused on formal reasoning and the mathematical underpinnings of algorithms.",
+  CS240: "<u>Programming in C</u>: Explored systems-level programming in C, including pointers, memory allocation, file I/O, data structures, the C preprocessor, and concurrency within the UNIX environment.",
+  CS251: "<u>Data Structures & Algorithms</u>: Focused on algorithm analysis and implementation of data structures including trees, heaps, hash tables, and graphs. Covered sorting algorithms, graph traversal, and runtime complexity.",
+  CS252: "<u>Systems Programming</u>: Covered low-level memory and pointer management, multithreading, process control, system calls, file I/O, and socket programming. Included shell scripting, UNIX tools, debugging, and embedded systems fundamentals.",
+  CS355: "<u>Introduction to Cryptography</u>: Explored classical and modern ciphers, including Caesar, RSA, and AES. Covered key exchange, digital signatures, hash functions, block and stream ciphers, and secure protocols.",
+  CS408: "<u>Software Testing</u>: Focused on testing strategies, debugging, and verification. Covered control/data flow analysis, regression testing, test adequacy, mutation testing, and automated testing tools.",
+  MGMT200: "<u>Introductory Accounting</u>: Introduced financial statements and their interpretation. Covered how business activities and management decisions impact reported financial information.",
+  ECON251: "<u>Microeconomics</u>: Examined individual decision-making, market incentives, and resource allocation. Emphasized the role of public policy in shaping market outcomes and economic efficiency.",
+  MGMT201: "<u>Management Accounting I</u>: Focused on internal accounting for decision-making, including budgeting, product costing, performance evaluation, and production management.",
+  MGMT382: "<u>Management Information Systems</u>: Explored how organizations manage and leverage information technology. Covered real-world case studies on strategic decision-making, system implementation, and emerging tech in business.",
+  MGMT44301: "<u>Management of Human Resources</u>: Covered HR strategies including staffing, compensation, job analysis, and legal considerations. Emphasized recruitment, development, and the role of unions in the workplace.",
+  MUS132: "<u>Music Theory I</u>: Introduced tonal harmony and melodic analysis through listening, writing, and keyboard skills. Focused on foundational theory and aural training for musicians.",
+  MUS378: "<u>Jazz History</u>: Explored the historical development and stylistic evolution of jazz, focusing on key artists, movements, and cultural impact.",
+  MUS352: "<u>Studio Voice</u>: Offered performance-based vocal training across genres in a masterclass setting. Included individual and group coaching with required in-class performances."
+};
 
-  const majorCourses = ["CS252", "CS355"];
-  const minorCourses = ["MGMT200", "ECON251"];
-  const extraCourses = ["HONR199", "MUS132"];
+
+  const compSciMajorCourses = ["CS180", "CS182", "CS240", "CS250", "CS251", "CS252", "CS355", "CS408", "MA261", "MA265", "STAT511"];
+  const managementMinorCourses = ["ECON251", "MGMT200", "MGMT201", "MGMT382", "MGMT44301"];
+  const musicMinorCourses = ["MUS132", "MUS378", "MUS352"];
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>experience — sanjana anand</title>
         <meta name="description" content="Internship and coursework experience" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 dark:bg-gray-900">
+      <main className="bg-white dark:bg-gray-900 px-6 sm:px-10">
         <section className="min-h-screen">
-          {/* Shared header */}
-          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Header />
 
           <div className="bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="md:py-12">
+              <div className="md:py-8">
                 <div className="max-w-5xl mx-auto">
-                  <h1 className="text-4xl font-semibold text-water-dark dark:text-white mb-10">
-                    experience
+                  <h1 className="text-3xl sm:text-4xl font-bold text-water-dark dark:text-white mb-8">
+                    Experience
                   </h1>
 
                   {/* Internships */}
-                  <div className="space-y-8 mb-16">
-                    <div className="border-l-4 pl-4 border-peach-dark">
-                      <h2 className="text-2xl font-medium text-black dark:text-white">
+                  <div className="space-y-6 mb-16">
+                    <div className="border-l-4 pl-4 border-peach-dark mb-4">
+                      <h2 className="text-2xl font-semibold text-black dark:text-white">
                         Internships
                       </h2>
                     </div>
-                    <div className="space-y-4">
-                      <div className="border rounded-lg p-4 bg-white dark:bg-gray-800 shadow-sm">
-                        <h3 className="text-lg font-semibold">
+
+                    <div className="space-y-6">
+                      <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
                           Datadog – Software Engineer Intern
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
                           Summer 2025 | Cloud SIEM Team
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
-                          <li>
-                            Built internal tools to detect and investigate cloud attack patterns.
-                          </li>
+                          <li>Built internal tools to detect and investigate cloud attack patterns.</li>
                           <li>Worked with Python, React, and Terraform in production environments.</li>
                         </ul>
                       </div>
-                      <div className="border rounded-lg p-4 bg-white dark:bg-gray-800 shadow-sm">
-                        <h3 className="text-lg font-semibold">
+
+                      <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
+                        <h3 className="text-lg font-semibold text-black dark:text-white">
                           Société Générale – Summer Analyst
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -78,32 +86,37 @@ export default function Experience() {
                   </div>
 
                   {/* Coursework */}
-                  <div className="space-y-10">
-                    <div className="border-l-4 pl-4 border-peach-dark">
-                      <h2 className="text-2xl font-medium text-black dark:text-white">Coursework</h2>
+                  <div className="space-y-8">
+                    <div className="border-l-4 pl-4 border-peach-dark mb-4">
+                      <h2 className="text-2xl font-semibold text-black dark:text-white">
+                        Coursework
+                      </h2>
                     </div>
-                    {[
-                      { title: "Major Courses", courses: majorCourses },
-                      { title: "Minor Courses", courses: minorCourses },
-                      { title: "Extra Courses", courses: extraCourses },
-                    ].map(({ title, courses }) => (
-                      <div key={title}>
-                        <h3 className="text-lg font-semibold mb-2 text-black dark:text-white">
-                          {title}
-                        </h3>
-                        <div className="flex flex-wrap gap-3">
-                          {courses.map((code) => (
-                            <button
-                              key={code}
-                              onClick={() => setSelectedCourse(code)}
-                              className="px-4 py-1 rounded border border-peach-dark text-peach-dark hover:bg-peach hover:text-white text-sm transition-all"
-                            >
-                              {code}
-                            </button>
-                          ))}
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {[
+                        { title: "Computer Science Major Courses", courses: compSciMajorCourses },
+                        { title: "Management Minor Courses", courses: managementMinorCourses },
+                        { title: "Music Minor Courses", courses: musicMinorCourses },
+                      ].map(({ title, courses }) => (
+                        <div key={title} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+                          <h3 className="text-md font-semibold mb-3 text-black dark:text-white">
+                            {title}
+                          </h3>
+                          <div className="flex flex-wrap gap-2">
+                            {courses.map((code) => (
+                              <button
+                                key={code}
+                                onClick={() => setSelectedCourse(code)}
+                                className="px-3 py-1 rounded border border-peach-dark text-peach-dark hover:bg-peach hover:text-white text-xs sm:text-sm transition-all"
+                              >
+                                {code}
+                              </button>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -123,9 +136,12 @@ export default function Experience() {
                     &times;
                   </button>
                 </div>
-                <p className="text-sm text-gray-800 dark:text-white">
-                  {courseDescriptions[selectedCourse] || "Description not available."}
-                </p>
+                <p
+  className="text-sm text-gray-800 dark:text-white"
+  dangerouslySetInnerHTML={{
+    __html: courseDescriptions[selectedCourse] || "Description not available.",
+  }}
+/>
               </div>
             </div>
           )}
