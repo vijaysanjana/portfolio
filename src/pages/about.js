@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react"; // Import useRef from the react module
 import sanju from "public/sanju.jpeg";
 import { WiDayLightWind } from "react-icons/wi";
-import Header from "@/components/Header";
+import Header from "../components/Header";
 
 export default function About() {
   const [imageLoaded, setImageLoaded] = useState(false);
