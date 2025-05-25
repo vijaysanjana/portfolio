@@ -34,7 +34,7 @@ export default function Header() {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1o08oOaKF-4fXX64bpRwWIZMBE1knu6Y7/view?usp=sharing"
+            href="https://drive.google.com/file/d/1dTq_xmQ8nXVSZiPJv6QlJQeypQSU4OD9/view?usp=sharing"
             className="peach-und inline-block text-black dark:text-white resume-link relative bg-gradient-to-r from-peach to-peach-dark bg-clip-text text-transparent transition-all duration-300 ease-in-out"
           >
             resumé
