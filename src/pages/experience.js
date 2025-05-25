@@ -20,7 +20,10 @@ const courseDescriptions = {
   MGMT44301: "<u>Management of Human Resources</u>: Covered HR strategies including staffing, compensation, job analysis, and legal considerations. Emphasized recruitment, development, and the role of unions in the workplace.",
   MUS132: "<u>Music Theory I</u>: Introduced tonal harmony and melodic analysis through listening, writing, and keyboard skills. Focused on foundational theory and aural training for musicians.",
   MUS378: "<u>Jazz History</u>: Explored the historical development and stylistic evolution of jazz, focusing on key artists, movements, and cultural impact.",
-  MUS352: "<u>Studio Voice</u>: Offered performance-based vocal training across genres in a masterclass setting. Included individual and group coaching with required in-class performances."
+  MUS352: "<u>Studio Voice</u>: Offered performance-based vocal training across genres in a masterclass setting. Included individual and group coaching with required in-class performances.",
+  MA261: "<u>Multivariate Calculus</u>: Covered planes, curves, and surfaces in three dimensions. Topics included partial derivatives, multiple integrals, and an introduction to vector calculus.",
+  MA265: "<u>Linear Algebra</u>: Introduced systems of equations, matrix operations, vector spaces, eigenvalues/eigenvectors, and diagonalization. Emphasized both theoretical foundations and applied problem solving.",
+  STAT511: "<u>Statistical Methods</u>: Covered descriptive statistics, probability, sampling distributions, hypothesis testing, and regression. Included binomial, Poisson, and normal distributions, as well as ANOVA and contingency tables."
 };
 
 
