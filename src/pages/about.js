@@ -113,7 +113,7 @@ export default function About() {
                         , a south asian a cappella group!{" "}
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        currently, i am seeking full time software engineer & forward deployed software engineer roles with a 2026 start date. i would love to connect with any company or individual interested in having me on board - i'm always on the hunt for my next big adventure!
+                        currently, i am seeking full time software engineer & forward deployed engineer roles with a 2026 start date. i would love to connect with any company or individual interested in having me on board - i'm always on the hunt for my next big adventure!
                       </p>
                     </div>
                   </div>
