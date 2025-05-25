@@ -74,7 +74,7 @@ export default function About() {
                         about me!
                       </h3>
                       <p className="text-lg pt-3 dark:text-white">
-                        i am a rising junior at{"  "}
+                        i am a rising senior at{"  "}
                         <a className="highlight" href="https://www.purdue.edu/">
                           purdue university
                         </a>
@@ -99,10 +99,25 @@ export default function About() {
                         >
                           music theory
                         </a>
-                        . my interests lie in security and fintech.
+                        . my interests lie in security, fintech, and consulting.
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        this past summer, i worked at{" "}
+                        this summer, i will be working at{" "} <a
+                        className="highlight"
+                        href="https://www.datadoghq.com/"
+                        >
+                          datadog
+                        </a>
+                        {" "}as a software engineer intern, specifically on their{" "} <a
+                        className="highlight"
+                        href="https://www.datadoghq.com/product/cloud-siem/"
+                        >
+                          cloud siem
+                        </a>
+                        {" "}product.
+                        </p>
+                        <p  className="text-lg pt-3 dark:text-white">
+                        aside from this, in the summer of 2024, i worked at{" "}
                         <a
                         className="highlight"
                         href="https://www.societegenerale.com/en"
@@ -129,7 +144,7 @@ export default function About() {
                         , a south asian a cappella group!{" "}
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        i would love to connect with any company or individual interested in having me on board as a software engineer - i'm always on the hunt for my next big adventure!
+                        currently, i am seeking full time software engineer & forward deployed software engineer roles with a 2026 start date. i would love to connect with any company or individual interested in having me on board - i'm always on the hunt for my next big adventure!
                       </p>
                     </div>
                   </div>
