@@ -1,5 +1,5 @@
 import { WiDayLightWind } from "react-icons/wi";
-import { useDarkMode } from "@/context/DarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 
 export default function Header() {
   const { darkMode, setDarkMode } = useDarkMode();

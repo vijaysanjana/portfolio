@@ -5,7 +5,7 @@ import Image from "next/image";
 import anisanju from "public/anisanju.png";
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
-import Header from "@/components/Header";
+import Header from "../components/Header";
 
 
 export default function Home() {
