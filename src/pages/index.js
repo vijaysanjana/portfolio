@@ -2,7 +2,7 @@ import Head from "next/head";
 import { WiDayLightWind } from "react-icons/wi";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import laptop from "public/laptop.png";
+import anisanju from "public/anisanju.png";
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 
@@ -99,8 +99,8 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center drop-shadow-2xl">
               <div className={`fadeIn ${imageLoaded ? "loaded" : ""}`}>
                 <Image
-                  src={laptop}
-                  alt="laptop"
+                  src={anisanju}
+                  alt="anisanju"
                   layout="fixed"
                   onLoadingComplete={() => setImageLoaded(true)}
                 />
