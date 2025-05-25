@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
-import "../../styles/globals.css";
-import { DarkModeProvider } from "../../context/DarkModeContext";
+import "./styles/globals.css";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 
 function MyApp({ Component, pageProps, router }) {
