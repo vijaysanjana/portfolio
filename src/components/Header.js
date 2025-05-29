@@ -5,8 +5,7 @@ export default function Header() {
   const { darkMode, setDarkMode } = useDarkMode();
 
   return (
-    <nav className="pt-5 pb-2 mb-12 flex justify-between">
-      <h1 className="text-2xl font-satoshi dark:text-white">SA</h1>
+    <nav className="pt-5 pb-2 mb-12 flex justify-center">
       <ul className="flex items-center space-x-5">
         <li>
           <a
