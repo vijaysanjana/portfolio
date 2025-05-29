@@ -6,30 +6,30 @@ export default function Experience() {
   const [selectedCourse, setSelectedCourse] = useState(null);
 
 const courseDescriptions = {
-  CS180: "<u>Object-Oriented Programming</u>: Introduced problem-solving and algorithmic thinking using a high-level language. Covered conditionals, iteration, object-oriented design, data structures, searching/sorting, file I/O, GUI development, and debugging techniques.",
-  CS182: "<u>Foundations of Computer Science</u>: Covered logic and proofs, set theory, functions, recursion, graph theory, finite state machines, and computability. Focused on formal reasoning and the mathematical underpinnings of algorithms.",
-  CS240: "<u>Programming in C</u>: Explored systems-level programming in C, including pointers, memory allocation, file I/O, data structures, the C preprocessor, and concurrency within the UNIX environment.",
-  CS251: "<u>Data Structures & Algorithms</u>: Focused on algorithm analysis and implementation of data structures including trees, heaps, hash tables, and graphs. Covered sorting algorithms, graph traversal, and runtime complexity.",
-  CS252: "<u>Systems Programming</u>: Covered low-level memory and pointer management, multithreading, process control, system calls, file I/O, and socket programming. Included shell scripting, UNIX tools, debugging, and embedded systems fundamentals.",
-  CS355: "<u>Introduction to Cryptography</u>: Explored classical and modern ciphers, including Caesar, RSA, and AES. Covered key exchange, digital signatures, hash functions, block and stream ciphers, and secure protocols.",
-  CS408: "<u>Software Testing</u>: Focused on testing strategies, debugging, and verification. Covered control/data flow analysis, regression testing, test adequacy, mutation testing, and automated testing tools.",
-  MGMT200: "<u>Introductory Accounting</u>: Introduced financial statements and their interpretation. Covered how business activities and management decisions impact reported financial information.",
-  ECON251: "<u>Microeconomics</u>: Examined individual decision-making, market incentives, and resource allocation. Emphasized the role of public policy in shaping market outcomes and economic efficiency.",
-  MGMT201: "<u>Management Accounting I</u>: Focused on internal accounting for decision-making, including budgeting, product costing, performance evaluation, and production management.",
-  MGMT382: "<u>Management Information Systems</u>: Explored how organizations manage and leverage information technology. Covered real-world case studies on strategic decision-making, system implementation, and emerging tech in business.",
-  MGMT44301: "<u>Management of Human Resources</u>: Covered HR strategies including staffing, compensation, job analysis, and legal considerations. Emphasized recruitment, development, and the role of unions in the workplace.",
-  MUS132: "<u>Music Theory I</u>: Introduced tonal harmony and melodic analysis through listening, writing, and keyboard skills. Focused on foundational theory and aural training for musicians.",
-  MUS378: "<u>Jazz History</u>: Explored the historical development and stylistic evolution of jazz, focusing on key artists, movements, and cultural impact.",
-  MUS352: "<u>Studio Voice</u>: Offered performance-based vocal training across genres in a masterclass setting. Included individual and group coaching with required in-class performances.",
-  MA261: "<u>Multivariate Calculus</u>: Covered planes, curves, and surfaces in three dimensions. Topics included partial derivatives, multiple integrals, and an introduction to vector calculus.",
-  MA265: "<u>Linear Algebra</u>: Introduced systems of equations, matrix operations, vector spaces, eigenvalues/eigenvectors, and diagonalization. Emphasized both theoretical foundations and applied problem solving.",
-  STAT511: "<u>Statistical Methods</u>: Covered descriptive statistics, probability, sampling distributions, hypothesis testing, and regression. Included binomial, Poisson, and normal distributions, as well as ANOVA and contingency tables."
+  "Object-Oriented Programming": "<u>CS 18000</u>: Introduced problem-solving and algorithmic thinking using a high-level language. Covered conditionals, iteration, object-oriented design, data structures, searching/sorting, file I/O, GUI development, and debugging techniques.",
+  "Discrete Mathematics": "<u>CS 18200</u>: Covered logic and proofs, set theory, functions, recursion, graph theory, finite state machines, and computability. Focused on formal reasoning and the mathematical underpinnings of algorithms.",
+  "Programming in C": "<u>CS 240000</u>: Explored systems-level programming in C, including pointers, memory allocation, file I/O, data structures, the C preprocessor, and concurrency within the UNIX environment.",
+  "Data Structures & Algorithms": "<u>CS 25100</u>: Focused on algorithm analysis and implementation of data structures including trees, heaps, hash tables, and graphs. Covered sorting algorithms, graph traversal, and runtime complexity.",
+  "Systems Programming": "<u>CS 25200</u>: Covered low-level memory and pointer management, multithreading, process control, system calls, file I/O, and socket programming. Included shell scripting, UNIX tools, debugging, and embedded systems fundamentals.",
+  "Introduction to Cryptography": "<u>CS 35500</u>: Explored classical and modern ciphers, including Caesar, RSA, and AES. Covered key exchange, digital signatures, hash functions, block and stream ciphers, and secure protocols.",
+  "Software Testing": "<u>CS 40800</u>: Focused on testing strategies, debugging, and verification. Covered control/data flow analysis, regression testing, test adequacy, mutation testing, and automated testing tools.",
+  "Introductory Accounting": "<u>MGMT 20000</u>: Introduced financial statements and their interpretation. Covered how business activities and management decisions impact reported financial information.",
+  "Microeconomics": "<u>ECON 25100</u>: Examined individual decision-making, market incentives, and resource allocation. Emphasized the role of public policy in shaping market outcomes and economic efficiency.",
+  "Management Accounting I": "<u>Management Accounting I</u>: Focused on internal accounting for decision-making, including budgeting, product costing, performance evaluation, and production management.",
+  "Management Information Systems": "<u>MGMT 38200</u>: Explored how organizations manage and leverage information technology. Covered real-world case studies on strategic decision-making, system implementation, and emerging tech in business.",
+  "Management of Human Resources": "<u>MGMT 44301</u>: Covered HR strategies including staffing, compensation, job analysis, and legal considerations. Emphasized recruitment, development, and the role of unions in the workplace.",
+  "Music Theory I": "<u>MUS 13200</u>: Introduced tonal harmony and melodic analysis through listening, writing, and keyboard skills. Focused on foundational theory and aural training for musicians.",
+  "Jazz History": "<u>MUS 37500</u>: Explored the historical development and stylistic evolution of jazz, focusing on key artists, movements, and cultural impact.",
+  "Studio Voice": "<u>MUS 35200</u>: Offered performance-based vocal training across genres in a masterclass setting. Included individual and group coaching with required in-class performances.",
+  "Multivariate Calculus": "<u>MA 26100</u>: Covered planes, curves, and surfaces in three dimensions. Topics included partial derivatives, multiple integrals, and an introduction to vector calculus.",
+  "Linear Algebra": "<u>MA 26500</u>: Introduced systems of equations, matrix operations, vector spaces, eigenvalues/eigenvectors, and diagonalization. Emphasized both theoretical foundations and applied problem solving.",
+  "Statistical Methods": "<u>STAT 51100</u>: Covered descriptive statistics, probability, sampling distributions, hypothesis testing, and regression. Included binomial, Poisson, and normal distributions, as well as ANOVA and contingency tables."
 };
 
 
-  const compSciMajorCourses = ["CS180", "CS182", "CS240", "CS250", "CS251", "CS252", "CS355", "CS408", "MA261", "MA265", "STAT511"];
-  const managementMinorCourses = ["ECON251", "MGMT200", "MGMT201", "MGMT382", "MGMT44301"];
-  const musicMinorCourses = ["MUS132", "MUS378", "MUS352"];
+  const compSciMajorCourses = ["Object-Oriented Programming", "Discrete Mathematics", "Programming in C", "Computer Architecture", "Data Structures & Algorithms", "Systems Programming", "Introduction to Cryptography", "Software Testing", "Multivariate Calculus", "Linear Algebra", "Statistical Methods"];
+  const managementMinorCourses = ["Microeconomics", "Introductory Accounting", "Management Accounting I", "Management Information Systems", "Management of Human Resources"];
+  const musicMinorCourses = ["Music Theory I", "Jazz History", "Studio Voice"];
 
   return (
     <div>
