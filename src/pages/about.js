@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react"; // Import useRef from the react module
-import sanju from "public/sanju.jpeg";
+import sanju from "public/headshot.jpg";
 import { WiDayLightWind } from "react-icons/wi";
 import Header from "../components/Header";
 
@@ -31,8 +31,8 @@ export default function About() {
                         <Image
                           src={sanju}
                           alt="about"
-                          width="40%" // specify the width
-                          height="40%" // specify the height to match the width
+                          width={400} // specify the width
+                          height={400} // specify the height to match the width
                           onLoadingComplete={() => setImageLoaded(true)}
                           className="object-cover"
                         />
@@ -68,7 +68,7 @@ export default function About() {
                         >
                           music theory
                         </a>
-                        . my interests lie in security, fintech, and consulting.
+                        . i'm interested in real-time systems within security and fintech, especially in areas where tech directly supports decision making. 
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
                         this summer, i will be working at{" "} <a
