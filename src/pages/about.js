@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react"; // Import useRef from the react module
-import sanju from "public/headshot.jpg";
+import sanju from "public/headshot.JPG";
 import { WiDayLightWind } from "react-icons/wi";
 import Header from "../components/Header";
 
