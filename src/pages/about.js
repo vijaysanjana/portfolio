@@ -43,7 +43,7 @@ export default function About() {
                         about me!
                       </h3>
                       <p className="text-lg pt-3 dark:text-white">
-                        i am a rising senior at{"  "}
+                        i am a senior at{"  "}
                         <a className="highlight" href="https://www.purdue.edu/">
                           purdue university
                         </a>
@@ -71,7 +71,7 @@ export default function About() {
                         . i'm interested in real-time systems within security and fintech, especially in areas where tech directly supports decision making. 
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        this summer, i will be working at{" "} <a
+                        this past summer, i worked at{" "} <a
                         className="highlight"
                         href="https://www.datadoghq.com/"
                         >
@@ -113,7 +113,7 @@ export default function About() {
                         , a south asian a cappella group!{" "}
                       </p>
                       <p className="text-lg pt-3 dark:text-white">
-                        currently, i am seeking full time software engineer & forward deployed engineer roles with a 2026 start date. i would love to connect with any company or individual interested in having me on board - i'm always on the hunt for my next big adventure!
+                        currently, i am seeking full time software engineer & forward deployed engineer roles with a summer/fall 2026 start date. i would love to connect with any company or individual interested in having me on board - i'm always on the hunt for my next big adventure!
                       </p>
                     </div>
                   </div>

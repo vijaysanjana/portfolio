@@ -23,11 +23,13 @@ const courseDescriptions = {
   "Studio Voice": "<u>MUS 35200</u>: Offered performance-based vocal training across genres in a masterclass setting. Included individual and group coaching with required in-class performances.",
   "Multivariate Calculus": "<u>MA 26100</u>: Covered planes, curves, and surfaces in three dimensions. Topics included partial derivatives, multiple integrals, and an introduction to vector calculus.",
   "Linear Algebra": "<u>MA 26500</u>: Introduced systems of equations, matrix operations, vector spaces, eigenvalues/eigenvectors, and diagonalization. Emphasized both theoretical foundations and applied problem solving.",
-  "Statistical Methods": "<u>STAT 51100</u>: Covered descriptive statistics, probability, sampling distributions, hypothesis testing, and regression. Included binomial, Poisson, and normal distributions, as well as ANOVA and contingency tables."
+  "Statistical Methods": "<u>STAT 51100</u>: Covered descriptive statistics, probability, sampling distributions, hypothesis testing, and regression. Included binomial, Poisson, and normal distributions, as well as ANOVA and contingency tables.",
+  "Operating Systems": "<u>CS 35400</u>: Computer system and operating system architectures, processes, inter-process communication, inter-process synchronization, mutual exclusion, deadlocks, memory hierarchy, virtual memory, CPU scheduling, file systems, I/O device management, security.",
+  "Information Systems": "<u>CS 34800</u>: File organization and index structures; object-oriented database languages; the relational database model with introductions to SQL and DBMS; hierarchical models and network models with introductions to HDDL, HDML, and DBTG Codasyl; data mining; data warehousing; database connectivity; distributed databases; the client/server paradigm; middleware, including ODBC, JDBC, CORBA, and MOM."
 };
 
 
-  const compSciMajorCourses = ["Object-Oriented Programming", "Discrete Mathematics", "Programming in C", "Computer Architecture", "Data Structures & Algorithms", "Systems Programming", "Introduction to Cryptography", "Software Testing", "Multivariate Calculus", "Linear Algebra", "Statistical Methods"];
+  const compSciMajorCourses = ["Object-Oriented Programming", "Discrete Mathematics", "Programming in C", "Computer Architecture", "Data Structures & Algorithms", "Systems Programming", "Introduction to Cryptography", "Software Testing", "Multivariate Calculus", "Linear Algebra", "Statistical Methods", "Operating Systems", "Information Systems"];
   const managementMinorCourses = ["Microeconomics", "Introductory Accounting", "Management Accounting I", "Management Information Systems", "Management of Human Resources"];
   const musicMinorCourses = ["Music Theory I", "Jazz History", "Studio Voice"];
 
@@ -68,8 +70,10 @@ const courseDescriptions = {
                           Summer 2025 | Cloud SIEM Team
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
-                          <li>Working on Datadog’s Cloud SIEM platform, which ingests and analyzes logs at scale to detect security threats in
-                          real time across cloud environments.</li>
+                          <li>Built a SQL-based caching layer for the Cloud SIEM Investigator’s entity suggestion feature, implementing
+materialized views and a fallback mechanism to ensure reliable data retrieval.</li>
+                          <li>Migrated the AWS entity suggestion endpoint to the new SQL engine, cutting p95 latency from 55 s to 1.56 s (97%
+reduction) and average response time from 21.7 s to 0.91 s (96% reduction).</li>
                         </ul>
                       </div>
                       <div className="border rounded-lg p-5 bg-white dark:bg-gray-800 shadow-sm">
@@ -77,11 +81,11 @@ const courseDescriptions = {
                           Scope Consulting – Director of Project Development
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                          Feb. 2023 - Present | Executive Board
+                          Jan. 2023 - Dec. 2025 | Executive Board
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 dark:text-white">
-                          <li>Overseeing 50+ club members in 8 different projects within Technology and Management Consulting.</li>
-                          <li>Driving project delivery by coordinating technical roadmaps and facilitating communication between PMs and Executive
+                          <li>Oversaw 50+ club members in 8 different projects within Technology and Management Consulting.</li>
+                          <li>Drove project delivery by coordinating technical roadmaps and facilitating communication between PMs and Executive
                           Board.</li>
                         </ul>
                       </div>
